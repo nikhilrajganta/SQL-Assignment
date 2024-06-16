@@ -157,3 +157,16 @@ where orders.CustomerID = customers.CustomerID
 ```
 
 ![alt text](q-12ans.png)
+
+### Question No-13
+
+`13. Write an SQL query to retrieve a list of all orders along with customer information (e.g., customer name) for each order.
+`
+
+```sql
+select orders.OrderID,customers.CustomerID,customers.FirstName, customers.LastName,customers.Email
+from orders
+join customers on customers.CustomerID = orders.CustomerID
+```
+
+![alt text](q-13ans.png)

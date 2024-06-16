@@ -35,3 +35,16 @@ insert into customers values (6,'Rithwik','Raj','rr@gmail.com',67890,'Madinaguda
 ```
 
 ![alt text](q-3ans.png)
+
+### Question No-4
+
+`4. Write an SQL query to update the prices of all electronic gadgets in the "Products" table by increasing them by 10%.
+`
+
+```sql
+update products
+set price = Price * 1.1
+where ProductName IN ('Phone','Laptop','Tablet','SmartWatch','EarBuds')
+```
+
+![alt text](q-4ans.png)

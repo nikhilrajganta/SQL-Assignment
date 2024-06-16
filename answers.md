@@ -138,3 +138,22 @@ where OrderID = 6
 ```
 
 ![alt text](q-11ans.png)
+
+### Question No-12
+
+`12. Write an SQL query to calculate and update the number of orders placed by each customer in the "Customers" table based on the data in the "Orders" table.
+`
+
+```sql
+alter table customers
+add orderCount int
+
+update customers
+set orderCount  = (
+select COUNT(*)
+from orders
+where orders.CustomerID = customers.CustomerID
+)
+```
+
+![alt text](q-12ans.png)

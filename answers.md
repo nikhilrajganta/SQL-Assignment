@@ -24,3 +24,14 @@ join customers c on o.CustomerID = c.CustomerID
 ```
 
 ![alt text](q-2ans.png)
+
+### Question No-3
+
+`3. Write an SQL query to insert a new customer record into the "Customers" table. Include customer information such as name, email, and address.
+`
+
+```sql
+insert into customers values (6,'Rithwik','Raj','rr@gmail.com',67890,'Madinaguda')
+```
+
+![alt text](q-3ans.png)

@@ -71,3 +71,16 @@ insert into orders values (6,2,'2024-02-06',6999)
 ```
 
 ![alt text](q-6ans.png)
+
+### Question No-7
+
+`
+7. Write an SQL query to update the contact information (e.g., email and address) of a specific customer in the "Customers" table. Allow users to input the customer ID and new contact information.`
+
+```sql
+update customers
+set Email = 'nr@gmail.com' , Address = 'London'
+where CustomerID = 1
+```
+
+![alt text](q-7ans.png)

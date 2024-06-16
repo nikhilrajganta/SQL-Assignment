@@ -101,3 +101,15 @@ where od.OrderID = orders.OrderID
 ```
 
 ![alt text](q-8ans.png)
+
+### QUestion No-9
+
+`9. Write an SQL query to delete all orders and their associated order details for a specific customer from the "Orders" and "OrderDetails" tables. Allow users to input the customer ID as a parameter.
+`
+
+```sql
+delete from orderdetails where OrderID in (select OrderID from orders where CustomerID = 5)
+delete from orders where CustomerID = 5
+```
+
+![alt text](q-9ans.png)

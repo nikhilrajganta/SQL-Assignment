@@ -84,3 +84,20 @@ where CustomerID = 1
 ```
 
 ![alt text](q-7ans.png)
+
+### Question No-8
+
+`8. Write an SQL query to recalculate and update the total cost of each order in the "Orders" table based on the prices and quantities in the "OrderDetails" table.
+`
+
+```sql
+update orders
+set TotalAmount = (
+select sum(od.Quantity * p.Price)
+from orderdetails od
+join products p on od.ProductID = p.ProductID
+where od.OrderID = orders.OrderID
+)
+```
+
+![alt text](q-8ans.png)

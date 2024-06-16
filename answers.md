@@ -184,3 +184,16 @@ group by products.ProductName
 ```
 
 ![alt text](q-14ans.png)
+
+### Question No-15
+
+`15. Write an SQL query to list all customers who have made at least one purchase. Include their names and contact information.
+`
+
+```sql
+select distinct customers.FirstName,customers.LastName,customers.Email,customers.Phone
+from customers
+join orders on customers.CustomerID = orders.CustomerID
+```
+
+![alt text](q-15ans.png)

@@ -124,3 +124,17 @@ insert into products values (6,'Pendrive','Portable data storage device',1299)
 ```
 
 ![alt text](q-10ans.png)
+
+### Question No-11
+
+`11. Write an SQL query to update the status of a specific order in the "Orders" table (e.g., from "Pending" to "Shipped"). Allow users to input the order ID and the new status.`
+
+`Note : There is no column of status in Orders Table. So, I've done the update operation on OrderDate Column`
+
+```sql
+update orders
+set OrderDate = '2024-05-06'
+where OrderID = 6
+```
+
+![alt text](q-11ans.png)

@@ -48,3 +48,15 @@ where ProductName IN ('Phone','Laptop','Tablet','SmartWatch','EarBuds')
 ```
 
 ![alt text](q-4ans.png)
+
+### Question No-5
+
+`
+5. Write an SQL query to delete a specific order and its associated order details from the "Orders" and "OrderDetails" tables. Allow users to input the order ID as a parameter.`
+
+```sql
+delete from orderdetails where OrderID = 1
+delete from orders where OrderID = 1
+```
+
+![alt text](q-5ans.png)

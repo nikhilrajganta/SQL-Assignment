@@ -60,3 +60,14 @@ delete from orders where OrderID = 1
 ```
 
 ![alt text](q-5ans.png)
+
+### Question No-6
+
+`6. Write an SQL query to insert a new order into the "Orders" table. Include the customer ID, order date, and any other necessary information.
+`
+
+```sql
+insert into orders values (6,2,'2024-02-06',6999)
+```
+
+![alt text](q-6ans.png)

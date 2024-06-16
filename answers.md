@@ -113,3 +113,14 @@ delete from orders where CustomerID = 5
 ```
 
 ![alt text](q-9ans.png)
+
+### Question No-10
+
+`10. Write an SQL query to insert a new electronic gadget product into the "Products" table, including product name, category, price, and any other relevant details.
+`
+
+```sql
+insert into products values (6,'Pendrive','Portable data storage device',1299)
+```
+
+![alt text](q-10ans.png)

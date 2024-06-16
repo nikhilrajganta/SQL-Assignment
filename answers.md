@@ -10,7 +10,7 @@ select FirstName,LastName,Email
 from customers
 ```
 
-![alt text](q-1and.png)
+![alt text](q-1ans-1.png)
 
 ### Question No-2
 
